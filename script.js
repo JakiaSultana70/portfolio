@@ -91,7 +91,7 @@
         if (en.isIntersecting) { en.target.classList.add('in'); reveal.unobserve(en.target); }
       });
     }, { rootMargin: '0px 0px -8% 0px' });
-    document.querySelectorAll('.card, .project, .skill-group, .timeline li, .training').forEach(function (el) { reveal.observe(el); });
+    document.querySelectorAll('.reveal').forEach(function (el) { reveal.observe(el); });
   } else {
     root.classList.remove('js');
   }
